@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+    <h1>Home Page</h1>
+    <p>my first emoji : &#128512;</p>
+</head>
+<body>
+{% for article in articles %}
+<article>
+    <img src="{{article.img}}" alt="{{article.title}}">
+    <h1>{{articles.title}}</h1>
+    <p>{{article.description}}</p>
+</article>
+{% endfor %}
+<p>
+  <a href="https://www.qries.com/">
+      <img alt="Qries" src="https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg"
+           width=150" height="70">
+  </a>
+</p>
+</body>
+</html>
