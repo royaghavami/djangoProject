@@ -9,16 +9,16 @@
 <body>
 {% for article in articles %}
 <article>
-    <img src="{{article.img}}" alt="{{article.title}}">
-    <h1>{{articles.title}}</h1>
+    <img src="{{article.thumbnail.url}}" alt="{{article.title}}" width="600" height="400">
+    <h1>
+        <a href="{{article.slug}}">{{article.title}}</a>
+                {{articles.title}}
+    </h1>
+    <small>
+        {{article.publish}}
+    </small>
     <p>{{article.description}}</p>
 </article>
 {% endfor %}
-<p>
-  <a href="https://www.qries.com/">
-      <img alt="Qries" src="https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg"
-           width=150" height="70">
-  </a>
-</p>
 </body>
 </html>
