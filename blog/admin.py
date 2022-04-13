@@ -19,6 +19,7 @@ class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {
         'slug': ('title',)
     }
+    ordering = ['status', 'publish']
 
 
 admin.site.register(Article, ArticleAdmin)
