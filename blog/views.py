@@ -12,7 +12,7 @@ def home(request):
     return render(request, "blog/home.html", context)
 
 
-def details(request, slug):
+def detail(request, slug):
     context = {
         "article": Article.objects.get(slug=slug)
         # if we wanted to show only last three articles:
